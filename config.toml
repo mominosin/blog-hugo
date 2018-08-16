@@ -1,7 +1,7 @@
 googleAnalytics = "UA-34340630-2"
 theme = "hugo_theme_pickles"
 
-baseURL = "https://pages.momiage.tokyo"
+baseURL = "https://pages.momiage.tokyo/"
 languageCode = "jp"
 title = "もみあげのびるかな？"
 
