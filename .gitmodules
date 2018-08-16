@@ -1,0 +1,3 @@
+[submodule "public"]
+	path = public
+	url = https://mominosin@github.com/mominosin/mominosin.github.io.git
