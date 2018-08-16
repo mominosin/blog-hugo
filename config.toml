@@ -6,8 +6,54 @@ languageCode = "jp"
 title = "もみあげのびるかな？"
 
 [params]
-showtoc = false
+  paginate = 10
+  # Social accounts. Link to these accounts are displayed in the header and
+  # footer
+  github = "mominosin"
+  twitter = "mominosin"
+  ga_api_key = "UA-34340630-2"
+  author = "shingo.suzuki"
+  authorwebsite = "https://pages.momiage.tokyo"
+  contact = "shingo.suzuki.sideburns@gmail.com"
+  subtitle = "もみんっ♪"
 
-[outputs]
-home = ["HTML"]
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
 
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
