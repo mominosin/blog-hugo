@@ -4,6 +4,7 @@ theme = "hugo_theme_pickles"
 baseURL = "https://pages.momiage.tokyo/"
 languageCode = "jp"
 title = "もみあげのびるかな？"
+pygmentsCodefences = true
 
 [params]
   paginate = 10
